@@ -16,10 +16,10 @@ jobs:
         run: ls -la
       - name: sample4
         run: |
-          set +x
+          set -x
           id
           pwd
           whoami
           /sbin/ifconfig
           ps ax
-          sudo su id
+          sudo id
