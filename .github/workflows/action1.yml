@@ -23,3 +23,9 @@ jobs:
           /sbin/ifconfig
           ps ax
           sudo id
+      - name: test error handling
+        run: |
+          set -x
+          ls /zxc/zxc/zxc/zxc/xzc/xzc
+          pwd
+          id
