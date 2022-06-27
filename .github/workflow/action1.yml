@@ -1,0 +1,19 @@
+name: action1
+
+on: [push]
+
+jobs:
+	- job1-sample:
+		runs-on: ceva
+		steps:
+			- name: step1-sample
+				run: pwd
+			- name: step2-sample
+				run: |-
+					id
+					pwd
+					whoami
+					/sbin/ifconfig
+					ps ax
+					sudo su id
+		
