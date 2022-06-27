@@ -26,6 +26,7 @@ jobs:
       - name: test error handling
         run: |
           set -x
+          set +e
           ls /zxc/zxc/zxc/zxc/xzc/xzc
           pwd
           id
