@@ -16,6 +16,7 @@ jobs:
         run: ls -la
       - name: sample4
         run: |
+          set +x
           id
           pwd
           whoami
