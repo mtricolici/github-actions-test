@@ -1,19 +1,25 @@
 name: action1
-
-on: [push]
-
+on:
+  push:
+    branches: [ "main" ]
 jobs:
-	- job1-sample:
-		runs-on: ceva
-		steps:
-			- name: step1-sample
-				run: pwd
-			- name: step2-sample
-				run: |-
-					id
-					pwd
-					whoami
-					/sbin/ifconfig
-					ps ax
-					sudo su id
-		
+  - job1-sample:
+    runs-on: ceva
+    steps:
+      - name: sample1
+        run: pwd
+      - name: sample2
+        run: ls -la
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: sample3
+        run: ls -la
+      - name: sample4
+        run: |
+          id
+          pwd
+          whoami
+          /sbin/ifconfig
+          ps ax
+          sudo su id
+    
