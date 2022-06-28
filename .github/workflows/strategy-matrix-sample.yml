@@ -1,0 +1,17 @@
+name: strategy-sample
+on: push
+
+jobs:
+  node-version:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node_version: [8, 10]
+      max-parallel: 2
+      fail-fast: true
+    steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-versions: ${{ matrix.node_version }}
+      - name: verify node version
+        run: node -v
