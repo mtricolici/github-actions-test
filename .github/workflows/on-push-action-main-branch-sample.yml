@@ -33,4 +33,4 @@ jobs:
           id
       - name: use repo secret
         run: |
-        echo "mega secret value: '{{ MEGA_SECRET }}'"
+          echo "mega secret value: '{{ MEGA_SECRET }}'"
