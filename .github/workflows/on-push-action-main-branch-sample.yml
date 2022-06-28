@@ -2,6 +2,8 @@ name: on-push-action-main-branch-sample
 on:
   push:
 #    branches: [ "main" ]
+  paths-ignore:
+    - 'docs/***' # Do not invoke the build if changes are only in docs folder.
 jobs:
   job1-sample:
     runs-on: ubuntu-latest
