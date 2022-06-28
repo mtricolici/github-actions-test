@@ -31,6 +31,6 @@ jobs:
           docker version
           pwd
           id
-       - name: use repo secret
+      - name: use repo secret
         run: |
-          echo "mega secret value: '{{ MEGA_SECRET }}'"
+        echo "mega secret value: '{{ MEGA_SECRET }}'"
