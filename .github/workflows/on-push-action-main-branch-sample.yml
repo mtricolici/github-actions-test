@@ -1,7 +1,7 @@
 name: on-push-action-main-branch-sample
 on:
   push:
-    branches: [ "main" ]
+#    branches: [ "main" ]
 jobs:
   job1-sample:
     runs-on: ubuntu-latest
@@ -31,3 +31,9 @@ jobs:
           docker version
           pwd
           id
+      - name: use repo secret
+        run: |
+          echo "mega secret value: '${{ secrets.MEGA_SECRET }}'"
+          echo "${{ secrets.MEGA_SECRET }}" > secret-file
+          cat secret-file
+          wc -c secret-file
