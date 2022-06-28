@@ -1,0 +1,15 @@
+name: on-pull-request
+on:
+  pull_request:
+    types: [opened, reopened]
+jobs:
+  build-ci-something:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: run-tests
+        run: |
+          set -x
+          set +e
+          set
