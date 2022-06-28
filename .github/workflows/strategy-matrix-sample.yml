@@ -1,6 +1,7 @@
 name: strategy-matrix-sample
 on:
   push:
+    branches: [ "zuzu" ]
 jobs:
   node-version:
     strategy:
