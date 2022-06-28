@@ -26,6 +26,9 @@ jobs:
           /sbin/ifconfig
           ps ax
           sudo id
+      - name: always run
+        if: always()
+        run: ls -la
       - name: test error handling
         run: |
           set -x
