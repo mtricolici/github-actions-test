@@ -1,7 +1,7 @@
 name: on-push-action-main-branch-sample
 on:
   push:
-#    branches: [ "main" ]
+    branches: [ "zuzu" ]
   paths-ignore:
     - 'docs/***' # Do not invoke the build if changes are only in docs folder.
 jobs:
