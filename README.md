@@ -15,3 +15,15 @@ ${{ contains('hello', 'll') }}
 ${{ toJson('something') }}
 ${{ format('hi {0} {1}', 'qqq', 'bbb') }}
 
+
+instead of container use services (and docker-compose syntax) to run multiple containers
+
+
+actions/cache
+actions/upload-artifact
+
+
+custom js actions
+custom docker actions
+
+see github actions marketplace
