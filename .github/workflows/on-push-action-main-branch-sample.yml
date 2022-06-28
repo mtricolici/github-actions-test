@@ -13,6 +13,7 @@ jobs:
         run: pwd
       - name: sample2
         run: ls -la
+        continue-on-error: true # <<<
       - name: checkout
         uses: actions/checkout@v3
       - name: sample3
