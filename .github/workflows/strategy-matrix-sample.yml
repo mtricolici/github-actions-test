@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/setup-node@v1
         with:
-          node-versions: ${{ matrix.node_version }}
+          node-version: ${{ matrix.node_version }}
       - name: verify node version
         run: node -v
