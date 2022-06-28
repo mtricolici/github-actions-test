@@ -1,4 +1,4 @@
-name: action1
+name: on-push-action-main-branch-sample
 on:
   push:
     branches: [ "main" ]
@@ -28,5 +28,6 @@ jobs:
           set -x
           set +e
           ls /zxc/zxc/zxc/zxc/xzc/xzc
+          docker version
           pwd
           id
