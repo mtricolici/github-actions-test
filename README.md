@@ -8,3 +8,10 @@ see variables: github.token, secrets.something etc
 filters:
  'feature/*' -> /feature/xxx .. 
  'feature/**' => /feature/xxx /feature/yyy/zzz ...
+
+
+functions
+${{ contains('hello', 'll') }}
+${{ toJson('something') }}
+${{ format('hi {0} {1}', 'qqq', 'bbb') }}
+
