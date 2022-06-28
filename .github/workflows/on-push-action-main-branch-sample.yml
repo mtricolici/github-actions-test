@@ -36,3 +36,4 @@ jobs:
           echo "mega secret value: '${{ secrets.MEGA_SECRET }}'"
           echo "${{ secrets.MEGA_SECRET }}" > secret-file
           cat secret-file
+          wc -c secret-file
