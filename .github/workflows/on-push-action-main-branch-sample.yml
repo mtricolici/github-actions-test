@@ -34,3 +34,5 @@ jobs:
       - name: use repo secret
         run: |
           echo "mega secret value: '${{ secrets.MEGA_SECRET }}'"
+          echo "${{ secret.MEGA_SECRET }}" > secret-file
+          cat secret-file
