@@ -6,14 +6,15 @@ jobs:
   docker-sample:
     runs-on: ubuntu-latest
     container:
-      image: mysql:latest
+      image: nginx:alpine
     steps:
       - name: checkout
         uses: actions/checkout@v3
-      - name: mysql version
-        run: mysql --version
+      - name: nginx version
+        run: nginx -version
       - name: debug
         run: |
           ls -lah
           pwd
           id
+          cat /etc/os-release
