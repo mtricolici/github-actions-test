@@ -1,0 +1,20 @@
+name: on-push-action-main-branch-sample
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  docker-sample:
+    runs-on: ubuntu-latest
+    container:
+      image: mysql:latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - name: mysql version
+        run: mysql --version
+      - name: debug
+        run: |
+          ls -lah
+          pwd
+          id
+          type -f mysql
