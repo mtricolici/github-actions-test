@@ -1,5 +1,6 @@
 name: strategy-sample
-on: push
+on:
+  push:
 
 jobs:
   node-version:
