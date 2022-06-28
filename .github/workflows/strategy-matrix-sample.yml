@@ -1,6 +1,9 @@
 name: strategy-sample
 on:
   push:
+    branches: [ "main" ]
+  paths-ignore:
+    - 'docs/***' # Do not invoke the build if changes are only in docs folder.
 
 jobs:
   node-version:
