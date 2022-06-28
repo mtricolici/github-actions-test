@@ -17,4 +17,3 @@ jobs:
           ls -lah
           pwd
           id
-          type -f mysql
